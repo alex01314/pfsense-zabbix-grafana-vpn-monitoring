@@ -1,0 +1,52 @@
+{
+  "collection_ok": 1,
+  "collected_at": 1700000000,
+  "tunnels": {
+    "ipsec101": {
+      "unit": "Unidade Alfa",
+      "path": "Link A",
+      "reqid": 6101,
+      "ike_established": 1,
+      "child_installed": 1,
+      "session_up": 1
+    },
+    "ipsec102": {
+      "unit": "Unidade Alfa",
+      "path": "Link B",
+      "reqid": 6102,
+      "ike_established": 0,
+      "child_installed": 0,
+      "session_up": 0
+    },
+    "con-lab-beta": {
+      "unit": "Unidade Beta",
+      "path": "",
+      "reqid": null,
+      "ike_established": 1,
+      "child_installed": 0,
+      "session_up": 2,
+      "children_expected": 2,
+      "children_installed": 1
+    }
+  },
+  "discovery": [
+    {
+      "{#IFNAME}": "ipsec101",
+      "{#UNIT}": "Unidade Alfa",
+      "{#PATH}": "Link A",
+      "{#REQID}": 6101
+    },
+    {
+      "{#IFNAME}": "ipsec102",
+      "{#UNIT}": "Unidade Alfa",
+      "{#PATH}": "Link B",
+      "{#REQID}": 6102
+    },
+    {
+      "{#IFNAME}": "con-lab-beta",
+      "{#UNIT}": "Unidade Beta",
+      "{#PATH}": "",
+      "{#REQID}": ""
+    }
+  ]
+}

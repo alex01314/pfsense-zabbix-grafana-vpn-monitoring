@@ -1,0 +1,17 @@
+# Dados e configurações locais
+.env
+.env.*
+!.env.example
+config.xml
+status.json
+!examples/status.json
+*.pcap
+*.pcapng
+*.log
+*.bak
+*.pem
+*.key
+*.p12
+*.pfx
+__pycache__/
+.DS_Store
