@@ -2,7 +2,6 @@
 
 Estudo de caso de engenharia de monitoramento: transformar o estado das associações IPsec em indicadores por unidade, automatizar a descoberta de túneis e acompanhar a saúde da própria coleta.
 
-**Versão pública sanitizada.** Nomes, identificadores, endereços e valores dos exemplos são fictícios. Nenhum print, log, arquivo de configuração ou captura de pacotes do ambiente original está incluído.
 
 ## Problema
 
