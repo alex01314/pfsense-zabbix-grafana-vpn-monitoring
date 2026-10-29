@@ -15,3 +15,6 @@ status.json
 *.pfx
 __pycache__/
 .DS_Store
+
+# Configuracao privada
+collector/config.php

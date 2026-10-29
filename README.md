@@ -48,14 +48,15 @@ O Cron executa a coleta e o envio a cada minuto. Um único JSON alimenta o item 
 - [Construção do dashboard](docs/grafana.md)
 - [Operação e troubleshooting](docs/operations.md)
 - [Privacidade e escopo público](docs/privacy.md)
+- [Coletor e sender sanitizados](collector/README.md)
 - [Snapshot fictício](examples/status.json)
 - [Validação dos exemplos](tools/validate_examples.py)
 
 ## Escopo e validação
 
-Este repositório documenta uma implementação realizada com PHP 8.2, Zabbix 7.0 e Grafana com datasource Zabbix. O material público contém documentação e fixtures sintéticas; **não inclui os scripts completos de produção, um template importável ou export do dashboard**. Não é um instalador pronto para produção.
+Este repositório documenta uma implementação realizada com PHP 8.2, Zabbix 7.0 e Grafana com datasource Zabbix. O material público contém coletor e sender sanitizados, configuração fictícia, documentação e fixtures sintéticas. Não inclui template importável ou export do dashboard. Não é um instalador pronto para produção.
 
-Na implementação acompanhada, foram verificados sintaxe PHP, leitura do snapshot, aceite do envio pelo Zabbix, descoberta de itens e registros sucessivos separados por um minuto. Esses resultados não constituem teste de compatibilidade para outras versões. A validação local deste repositório verifica somente os exemplos sintéticos.
+Na implementação acompanhada, foram verificados sintaxe PHP, leitura do snapshot, aceite do envio pelo Zabbix, descoberta de itens e registros sucessivos separados por um minuto. Esses resultados não constituem teste de compatibilidade para outras versões. O validador Python verifica exemplos sintéticos e links locais, sem executar PHP. A versão sanitizada precisa de validação PHP e integração em laboratório.
 
 ```sh
 python3 tools/validate_examples.py

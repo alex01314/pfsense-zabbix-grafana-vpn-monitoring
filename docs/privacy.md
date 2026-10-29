@@ -8,4 +8,4 @@ Os nomes de arquivos, chaves Zabbix e estados do protocolo são convenções té
 
 Antes de futuras contribuições, revisar texto e imagens, inclusive nomes de séries, legendas, URLs e metadados. `.gitignore` reduz acidentes, mas não remove arquivos já versionados nem substitui revisão do histórico Git.
 
-O código completo dos scripts do ambiente original não foi fornecido a esta publicação. O repositório não afirma distribuir nem validar esse código. Todos os números do exemplo servem apenas para ilustrar o contrato JSON.
+Os scripts públicos foram adaptados dos arquivos fornecidos pelo autor. Inventário e destino do sender foram substituídos por configuração fictícia externa. Validar a versão sanitizada em laboratório antes do uso.

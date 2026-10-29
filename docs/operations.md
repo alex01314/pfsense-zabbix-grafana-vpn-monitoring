@@ -2,7 +2,7 @@
 
 ## Agendamento usado no projeto
 
-Pelo pacote Cron do pfSense, uma tarefa root com minuto, hora, dia do mês, mês e dia da semana iguais a `*`. Comando documentado, que depende de scripts locais não distribuídos neste repositório:
+Pelo pacote Cron do pfSense, uma tarefa root com minuto, hora, dia do mês, mês e dia da semana iguais a `*`. Comando documentado, que depende de scripts publicados em `collector/`, instalados e configurados localmente:
 
 ```sh
 /usr/bin/lockf -k -t 0 /var/run/zabbix-vpn.lock /bin/sh -c '{ /usr/local/bin/php /usr/local/share/zabbix-vpn/collect.php >/dev/null; /usr/local/bin/php /usr/local/share/zabbix-vpn/send.php; } >/var/log/zabbix-vpn-last.log 2>&1'

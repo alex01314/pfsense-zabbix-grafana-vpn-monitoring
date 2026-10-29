@@ -3,7 +3,7 @@
   "collected_at": 1700000000,
   "tunnels": {
     "ipsec101": {
-      "unit": "Unidade Alfa",
+      "unit": "VPN 1",
       "path": "Link A",
       "reqid": 6101,
       "ike_established": 1,
@@ -11,19 +11,19 @@
       "session_up": 1
     },
     "ipsec102": {
-      "unit": "Unidade Alfa",
+      "unit": "VPN 1",
       "path": "Link B",
       "reqid": 6102,
       "ike_established": 0,
       "child_installed": 0,
       "session_up": 0
     },
-    "con-lab-beta": {
-      "unit": "Unidade Beta",
+    "con-lab-2": {
+      "unit": "VPN 2",
       "path": "",
       "reqid": null,
       "ike_established": 1,
-      "child_installed": 0,
+      "child_installed": 1,
       "session_up": 2,
       "children_expected": 2,
       "children_installed": 1
@@ -32,19 +32,19 @@
   "discovery": [
     {
       "{#IFNAME}": "ipsec101",
-      "{#UNIT}": "Unidade Alfa",
+      "{#UNIT}": "VPN 1",
       "{#PATH}": "Link A",
       "{#REQID}": 6101
     },
     {
       "{#IFNAME}": "ipsec102",
-      "{#UNIT}": "Unidade Alfa",
+      "{#UNIT}": "VPN 1",
       "{#PATH}": "Link B",
       "{#REQID}": 6102
     },
     {
-      "{#IFNAME}": "con-lab-beta",
-      "{#UNIT}": "Unidade Beta",
+      "{#IFNAME}": "con-lab-2",
+      "{#UNIT}": "VPN 2",
       "{#PATH}": "",
       "{#REQID}": ""
     }
